@@ -1,0 +1,8 @@
+scorer: veriscore
+data_path: /weka/oe-adapt-default/tongc/post-train-factuality/libs/VeriScore/data/prompts.jsonl
+model_name_extraction: openai::gpt-4.1-mini
+model_name_verification: openai::gpt-4.1-mini
+search_passages_path: /weka/oe-adapt-default/tongc/post-train-factuality/libs/fact-eval/index/psgs_w100.tsv
+search_passages_embedding_path: /weka/oe-adapt-default/tongc/post-train-factuality/libs/fact-eval/index/wikipedia_embeddings/passages_*
+search_model_name: facebook/contriever-msmarco
+search_res_num: 10

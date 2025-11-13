@@ -1,0 +1,25 @@
+{
+  "experiment_name": "qwen3-8b_verifier-14b",
+  "model_name": "Qwen/Qwen3-8B",
+  "renderer_name": "qwen3",
+  "verifier_model_name": "Qwen/Qwen2.5-14B-Instruct",
+  "verifier_renderer_name": "qwen3_disable_thinking",
+  "verifier_max_tokens": 512,
+  "lora_rank": 32,
+  "group_size": 16,
+  "groups_per_batch": 16,
+  "learning_rate": 1e-5,
+  "max_tokens": 4096,
+  "kl_penalty_coef": 0.001,
+  "bm25_top_k": 8,
+  "bm25_chunk_size": 512,
+  "num_substeps": 1,
+  "eval_every": 100,
+  "save_every": 100,
+  "use_async_rl": true,
+  "max_steps_off_policy": 2,
+  "remove_constant_reward_groups": true,
+  "wandb_project": "hallucination-rl",
+  "log_path": "/mmfs1/home/chentong/ws/tinker/tinker_cookbook/recipes/hallucination/logs"
+}
+
